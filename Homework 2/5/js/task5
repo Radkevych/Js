@@ -1,0 +1,10 @@
+const testingArr = [1, 1, 1, 0, 0, 1];
+let counterMultiplication = 1;
+let resultNumber = 0;
+for (let i = testingArr.length - 1; i >=0; i--) {
+    if (testingArr[i] === 1) {
+        resultNumber += counterMultiplication;
+    }
+    counterMultiplication *= 2;
+}
+console.log(resultNumber);
